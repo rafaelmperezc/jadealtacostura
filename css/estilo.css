@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navegacion{
+	width: auto;
+	margin: auto;
+	background: #000000;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	color:#fff;
+	/*padding = relleno*/
+	padding: 15px 20px;
+	font-family: "Charmonman", Arial, sans-serif, helvetica, cursive;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: bisque;
+	transition: all .3s;
+}
+
+/*submenú*/
+.submenu{
+	background:#0084FF;
+	position: absolute;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	text-decoration: none;
+	color: #fff;
+	font-family: "Charmonman", Arial, sans-serif, helvetica, cursive;
+	display: block;
+	padding: 15px;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.bg-image{
+	background-image:url('../img/bg_modificado.jpg');
+	height: 100%;
+}
+
+.fuente{
+	font-family: Arial, sans-serif, helvetica, cursive;
+	color: #FFFFFF;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.fuente2{
+	font-family: Arial, sans-serif, helvetica, cursive;
+	color: #FFFFFF;
+	font-size: 17px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.fuente3{
+	font-family: Arial, sans-serif, helvetica, cursive;
+	color: #FFFFFF;
+	font-size: 13px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.logo {
+	background-image: url(../img/logo.jpg);
+	height: 196px;
+	width: 568px;
+	margin: auto;
+}
+
+.wrap{
+	width: 100%;
+	max-width: 100%;
+	margin: auto;
+}
+
+.alert{
+	padding: 1em;
+	color: #fff;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.alert.error{
+	background: #F2DEDE;
+	border: 1px solid #a94442;
+	color: #a94442;
+}
+
+.alert.success{
+	background: #4CAF50;
+}
+
+form{
+	width: 75%;
+	margin: 20px 0;
+	padding: 20px;
+	/*background: #fff;*/
+	overflow: hidden;
+	box-shadow: 0 0 3px grey;
+	border-top: 4px solid #536DFE;
+}
+
+.btn,
+form input[type="submit"]{
+	padding: 5px;
+	background: #ED572A;
+	color:#E1E9FA;
+	/*font-size: 1em;*/
+	margin: auto;
+	font-family: "Charmonman", Arial, sans-serif, helvetica;
+	border-radius: 2px;
+	border:none;
+	float: center;
+	cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+	background: #E64A19;
+}
+
+form input[type="text"]{
+	border: 1px solid #536DFE;
+	border-radius: 2px;
+	/*padding: 16px;
+	width: 100%;
+	display: block;*/
+	margin-bottom: 20px;
+	font-family: Arial, sans-serif, helvetica;
+	font-size: 12px;
+	color:#141938;
+	text-transform: uppercase;
+}
+
+form input[type="text"]:focus{
+	border: 2px solid #3F51B5;
+	padding: 10px;
+	/*font-size: 13px;*/
+	text-transform: uppercase;
+}
+
+form input[type="date"]{
+	border: 1px solid #536DFE;
+	border-radius: 2px;
+	/*padding: 16px;
+	width: 100%;
+	display: block;*/
+	margin-bottom: 20px;
+	font-family: Arial, sans-serif, helvetica;
+	font-size: 12px;
+	color:#141938;
+	text-transform: uppercase;
+}
+
+form input[type="date"]:focus{
+	border: 2px solid #3F51B5;
+	padding: 10px;
+	/*font-size: 13px;*/
+	text-transform: uppercase;
+}
+
+select{
+	border: 1px solid #536DFE;
+	border-radius: 2px;
+	/*padding: 16px;
+	width: 100%;
+	display: block;*/
+	margin-bottom: 20px;
+	font-family: Arial, sans-serif, helvetica;
+	font-size: 12px;
+	color:#141938;
+	text-transform: uppercase;
+}
+
+select:focus{
+	border: 2px solid #3F51B5;
+	padding: 10px;
+	/*font-size: 13px;*/
+	text-transform: uppercase;
+}
+
+form textarea{
+	border: 1px solid #536DFE;
+	border-radius: 2px;
+	max-width: 100%;
+	min-width: 100%;
+	margin-bottom: 20px;
+	font-family: Arial, sans-serif, helvetica;
+	font-size: 12px;
+	color:#141938;
+	text-transform: uppercase;
+	max-height: 25%;
+	min-height: 25%;
+}
+
+form textarea:focus{
+	max-height: 25%;
+	min-height: 25%;
+	max-width: 100%;
+	min-width: 100%;
+	border: 2px solid #3F51B5;
+	padding: 10px;
+	/*font-size: 13px;*/
+	text-transform: uppercase;
+}
+
+.gastos{
+	font-family: "Charmonman", Arial, sans-serif, helvetica;
+	text-transform: uppercase;
+	font-size: 15px;
+	border-color: #FF00F5;
+	font-weight: bold;
+	color: #FFFFFF;
+}

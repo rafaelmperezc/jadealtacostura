@@ -1,0 +1,56 @@
+[18-Jan-2022 18:43:40 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/inicio.php on line 1
+[18-Jan-2022 18:43:40 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/inicio.php:1) in /home/jadealta/public_html/inicio.php on line 6
+[18-Jan-2022 18:43:46 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/atelas.php on line 1
+[18-Jan-2022 18:43:46 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/atelas.php:1) in /home/jadealta/public_html/atelas.php on line 6
+[18-Jan-2022 18:43:53 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/inicio.php on line 1
+[18-Jan-2022 18:43:53 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/inicio.php:1) in /home/jadealta/public_html/inicio.php on line 6
+[18-Jan-2022 18:43:55 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/atelas.php on line 1
+[18-Jan-2022 18:43:55 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/atelas.php:1) in /home/jadealta/public_html/atelas.php on line 6
+[18-Jan-2022 18:43:58 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/rtelas.php on line 1
+[18-Jan-2022 18:43:58 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/rtelas.php:1) in /home/jadealta/public_html/rtelas.php on line 6
+[18-Jan-2022 18:45:50 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/inicio.php on line 1
+[18-Jan-2022 18:45:50 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/inicio.php:1) in /home/jadealta/public_html/inicio.php on line 6
+[18-Jan-2022 18:46:08 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/gastos.php on line 1
+[18-Jan-2022 18:46:08 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/gastos.php:1) in /home/jadealta/public_html/gastos.php on line 6
+[18-Jan-2022 18:46:16 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/clientes.php on line 1
+[18-Jan-2022 18:46:16 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/clientes.php:1) in /home/jadealta/public_html/clientes.php on line 6
+[18-Jan-2022 18:46:22 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/inicio.php on line 1
+[18-Jan-2022 18:46:22 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/inicio.php:1) in /home/jadealta/public_html/inicio.php on line 6
+[18-Jan-2022 18:46:55 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/atelas.php on line 1
+[18-Jan-2022 18:46:55 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/atelas.php:1) in /home/jadealta/public_html/atelas.php on line 6
+[18-Jan-2022 18:47:21 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/inicio.php on line 1
+[18-Jan-2022 18:47:21 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/inicio.php:1) in /home/jadealta/public_html/inicio.php on line 6
+[18-Jan-2022 18:49:32 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/inicio.php on line 1
+[18-Jan-2022 18:49:32 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/inicio.php:1) in /home/jadealta/public_html/inicio.php on line 6
+[18-Jan-2022 18:49:41 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/rtelas.php on line 1
+[18-Jan-2022 18:49:41 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/rtelas.php:1) in /home/jadealta/public_html/rtelas.php on line 6
+[18-Jan-2022 18:50:52 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/atelas.php on line 1
+[18-Jan-2022 18:50:52 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/atelas.php:1) in /home/jadealta/public_html/atelas.php on line 6
+[18-Jan-2022 19:01:16 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/inicio.php on line 1
+[18-Jan-2022 19:01:16 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/inicio.php:1) in /home/jadealta/public_html/inicio.php on line 6
+[18-Jan-2022 21:43:17 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/inicio.php on line 1
+[18-Jan-2022 21:43:17 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/inicio.php:1) in /home/jadealta/public_html/inicio.php on line 6
+[19-Jan-2022 12:00:09 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/inicio.php on line 1
+[19-Jan-2022 12:00:09 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/inicio.php:1) in /home/jadealta/public_html/inicio.php on line 6
+[19-Jan-2022 12:00:19 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/rtelas.php on line 1
+[19-Jan-2022 12:00:19 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/rtelas.php:1) in /home/jadealta/public_html/rtelas.php on line 6
+[19-Jan-2022 12:01:32 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/atelas.php on line 1
+[19-Jan-2022 12:01:32 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/atelas.php:1) in /home/jadealta/public_html/atelas.php on line 6
+[19-Jan-2022 12:02:16 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/gastos.php on line 1
+[19-Jan-2022 12:02:16 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/gastos.php:1) in /home/jadealta/public_html/gastos.php on line 6
+[19-Jan-2022 12:04:20 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/rtelas.php on line 1
+[19-Jan-2022 12:04:20 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/rtelas.php:1) in /home/jadealta/public_html/rtelas.php on line 6
+[19-Jan-2022 12:05:07 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/rtelas.php on line 1
+[19-Jan-2022 12:05:07 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/rtelas.php:1) in /home/jadealta/public_html/rtelas.php on line 6
+[19-Jan-2022 12:05:26 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/rtelas.php on line 1
+[19-Jan-2022 12:05:26 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/rtelas.php:1) in /home/jadealta/public_html/rtelas.php on line 6
+[19-Jan-2022 12:06:24 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/rtelas.php on line 1
+[19-Jan-2022 12:06:24 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/rtelas.php:1) in /home/jadealta/public_html/rtelas.php on line 6
+[19-Jan-2022 12:10:25 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/rtelas.php on line 1
+[19-Jan-2022 12:10:25 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/rtelas.php:1) in /home/jadealta/public_html/rtelas.php on line 6
+[19-Jan-2022 16:15:40 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/clientes.php on line 1
+[19-Jan-2022 16:15:40 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/clientes.php:1) in /home/jadealta/public_html/clientes.php on line 6
+[19-Jan-2022 16:15:40 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/clientes.php on line 1
+[19-Jan-2022 16:15:40 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/clientes.php:1) in /home/jadealta/public_html/clientes.php on line 6
+[19-Jan-2022 20:00:34 America/Bogota] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/jadealta/public_html/inicio.php on line 1
+[19-Jan-2022 20:00:34 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/jadealta/public_html/inicio.php:1) in /home/jadealta/public_html/inicio.php on line 6
