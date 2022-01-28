@@ -96,7 +96,7 @@ require 'funciones/funciones.php'
       <td colspan="2" class="fuente"><!-- InstanceBeginEditable name="Edicion" --><center><?php
 		  $conexion = conexion($bd_config);
 		  if($conexion == true){
-			  echo "Bienvenidos a DannyCon</br></br> Su mejor opción en diseño y confección";
+			  echo "Jade Alta Costura</br></br> Su mejor opción en diseño y confección";
 		  }else{
 			  echo "Error de conexión";
 		  }
