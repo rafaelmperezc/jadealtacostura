@@ -130,7 +130,18 @@
 						<!-- InstanceBeginEditable name="Edicion" -->
 						<div clas="wrap">
 							<center>
-								<p class="fuente2">arreglo y confección por pedido</p>
+								<p class="fuente2">
+									Arreglo y confección por pedido
+								</p>
+								<p class="fuente3">
+									* En ubicación de factura digitar una de las siguientes opciones:
+								</p>
+								<p class="fuente3">
+									- EN BODEGA
+								</p>
+								<p class="fuente3">
+									-ENTREGADA
+								</p>
 								<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 									<table width="100%" border="0" align="center">
 										<tbody>
@@ -163,8 +174,12 @@
 												<td align="center" valign="middle"><label for="valor" class="fuente3">Código de Factura<br>
 														<input name="codigo" type="text" class="form-control" id="codigo" placeholder="Codigo Factura..." value="<?php if (!$enviado and isset($codigo)) echo $codigo ?>">
 													</label></td>
-												<td align="center" valign="middle"><label for="valorfactura" class="fuente3">Valor de la Factura<br>
-														<input name="valor" type="text" class="form-control" id="valor" placeholder="Valor..." value="<?php if (!$enviado and isset($valor)) echo $valor ?>" onKeyPress="return valida(event)"></label>
+												<td align="center" valign="middle">
+													<label for="valorfactura" class="fuente3">
+														Valor de la Factura
+														<br>
+														<input name="valor" type="text" class="form-control" id="valor" placeholder="Valor..." value="<?php if (!$enviado and isset($valor)) echo $valor ?>" onKeyPress="return valida(event)">
+													</label>
 													<br>
 													<label for="valor" class="fuente3">Fecha de Factura<br>
 														<input name="fecha" type="date" id="fecha" max="2100-12-31" min="1800-01-01" value="<?php if (!$enviado and isset($fecha)) echo $fecha ?>">
@@ -186,13 +201,8 @@
 													<label class="fuente3" for="ubicacion_factura">
 														Ubicación de la Factura
 														<br>														
-														<label class="fuente3">
-															<input type="radio" name="ufactura" id="ufactura" value="enBodega">En Bodega
-														</label>
-														<br>														
-														<label class="fuente3">
-															<input type="radio" name="ufactura" id="ufactura" value="enCliente">Entregado al cliente
-														</label>
+														<input name="ubicacion_factura" type="text" class="form-control" id="ubicacion_factura" placeholder="Ubicación de la Factura" value="<?php if (!$enviado and isset($valor)) echo $valor ?>" onKeyPress="return valida(event)">
+														<br>
 													</label>
 												</td>
 											</tr>
