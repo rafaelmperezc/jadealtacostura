@@ -255,6 +255,7 @@ $.each(obj, function(index) {
                  $('#abonof').val('');
                  $('#fechaa').val('');
                  $('#facturaestado').val(obj_datos[0].facestado);
+                 $('#ubifactura').val(obj_datos[0].ubfactura);
                  if(obj_datos[0].facestado=="CERRADA" || obj_datos[0].facestado=="ANULADA"){
                   $('#abonar').css('display','none'); 
                  }else{
@@ -334,7 +335,13 @@ $.each(obj, function(index) {
       				</tr>
       				<tr>
 				  	  <td align="center" valign="middle"><p class="fuente3">FECHA DEL ABONO</p><input name="fechaa" type="date" id="fechaa" max="2100-12-31" min="1800-01-01" ></td>
-				  	  <td align="center" valign="middle" class="fuente3" colspan="2"><p>ESTADO DE LA FACTURA</p><input name="facturaestado" type="text" disabled="disabled" class="form-control" id="facturaestado" placeholder="Estado de la Factura..." ></td>
+				  	  <td align="center" valign="middle" class="fuente3" colspan="2">
+                <p>ESTADO DE LA FACTURA</p>
+                <input name="facturaestado" type="text" disabled="disabled" class="form-control" id="facturaestado" placeholder="Estado de la Factura..." >
+                <p>Ubicación de la Factura</p>
+                <input name="ubifactura" type="text" class="form-control" id="ubifactura" placeholder="Ubicación..."  onKeyPress="return valida(event)">
+              </td>
+              
       				</tr>
       				<tr>
       					<td align="center" valign="middle" colspan="3">
