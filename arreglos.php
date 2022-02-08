@@ -72,8 +72,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['registrar'])){
 	$fecha = $_POST['fecha'];
 	$descripcion = strtoupper(limpiardatos($_POST['descripcion']));
 	$abono = limpiardatos($_POST['abono']);	
+	$ubicacion = limpiardatos($_POST['ubicacion_factura']);
 	
-	if($documento and $nombre and $telefono and $codigo and $valor and $fecha and $descripcion != ''){
+	if($documento and $nombre and $telefono and $codigo and $valor and $fecha and $descripcion != '' and $ubicacion != ''){
 		
 		$sentencia2 = $conexion->prepare('SELECT * FROM acreclientes WHERE faccod = :codigo LIMIT 1');
 		$sentencia2->execute([
@@ -85,7 +86,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['registrar'])){
 		if($res2 != false){
 			$errores .= 'La factura ya existe y no puede ser alterada';
 		}else{
-			$sentencia3 = $conexion->prepare('INSERT INTO acreclientes (faccod, doccli, nomcli, telcli, valor, fecha, detallefac) VALUES (:codigo, :documento, :nombre, :telefono, :valor, :fecha, :detalle)');
+			$sentencia3 = $conexion->prepare('INSERT INTO acreclientes (faccod, doccli, nomcli, telcli, valor, fecha, detallefac, ubifactura) VALUES (:codigo, :documento, :nombre, :telefono, :valor, :fecha, :detalle, :ubifactura)');
 			$sentencia3->execute([
 				':codigo' => $codigo,
 				':documento' => $documento,
@@ -93,7 +94,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['registrar'])){
 				':telefono' => $telefono,
 				':valor' => $valor,
 				':fecha' => $fecha,
-				':detalle' => $descripcion
+				':detalle' => $descripcion,
+				':ubifactura' => $ubicacion
 			]);
 			
 			
@@ -118,14 +120,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['registrar'])){
                         if($saldo == 0){
                             $estado = 'CERRADA';
                         }
-			$sentencia5 = $conexion->prepare('INSERT INTO abonofac (codfac, fechafac, valorfac, saldo, abono, estadofac) VALUES (:codigo, :fecha, :valor, :saldo, :abono, :estado)');
+			$sentencia5 = $conexion->prepare('INSERT INTO abonofac (codfac, fechafac, valorfac, saldo, abono, estadofac, ubfactura) VALUES (:codigo, :fecha, :valor, :saldo, :abono, :estado, :ufactura)');
 			$sentencia5->execute([
 				':codigo' => $codigo,
 				':fecha' => $fecha,
 				':valor' => $valor,
 				':saldo' => $saldo,
 				':abono' => $abono,
-				'estado' => $estado
+				':estado' => $estado,
+				':ufactura' => $ubicacion
 			]);
 		}
 		
@@ -140,13 +143,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['registrar'])){
 			
 		}else{
 			//$estado = 'ACTIVA';
-			$sentencia7 = $conexion->prepare('INSERT INTO estadofac VALUES (null, :codigo, :fecha, :valor, :saldo, :estado)');
+			$sentencia7 = $conexion->prepare('INSERT INTO estadofac VALUES (null, :codigo, :fecha, :valor, :saldo, :estado, :ubicacion)');
 			$sentencia7->execute([
 				':codigo' => $codigo,
 				':fecha' => $fecha,
 				':valor' => $valor,
 				':saldo' => $saldo,
-				':estado' => $estado
+				':estado' => $estado,
+				':ubicacion' => $ubicacion
 			]);
 		}
 				
@@ -164,6 +168,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	$valor = limpiardatos($_POST['valor']);
 	$fecha = $_POST['fecha'];
 	$descripcion = strtoupper(limpiardatos($_POST['descripcion']));
+	$ubicacion = strtoupper(limpiardatos($_POST['ubicacion_factura']));
 	
 	if(isset($_POST['buscar'])){
 		if($codigo != ''){
@@ -181,6 +186,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 				$valor = $res5['valor'];
 				$fecha = $res5['fecha'];
 				$descripcion = $res5['detallefac'];
+				$ubicacion = $res5['ubifactura'];
 			}else{
 				$errores .= 'La factura no existe, por favor verifique.';
 			}
