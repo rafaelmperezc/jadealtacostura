@@ -9,6 +9,15 @@ require 'admin/config.php';
 require 'funciones/funciones.php';
 $conexion = conexion($bd_config);
 $errores = '';
+$resultado = '';
+
+if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['buscarubica'])){
+	$sentencia = $conexion->prepare('SELECT * FROM abonofac ORDER BY fechafac DESC, idabofac DESC');
+	$sentencia->execute();
+	$resultado =$sentencia->fetchall();
+}else{
+	$resultado = false;
+}
 
 if(isset($_POST['abonar'])){
 		$abono = limpiardatos($_POST['abono']);

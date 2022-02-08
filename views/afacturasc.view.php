@@ -338,7 +338,7 @@ $.each(obj, function(index) {
       				</tr>
       				<tr>
       					<td align="center" valign="middle" colspan="3">
-     						<!--<input name="buscar" type="submit" class="btn btn-primary" id="buscar" value="BUSCAR" >&nbsp; &nbsp; &nbsp;-->
+     						<input name="buscarubica" type="submit" class="btn btn-primary" id="buscarubica" value="BUSCAR UBICACIÓN FACTURAS" >&nbsp; &nbsp; &nbsp;
      						<input name="abonar" type="button" class="btn btn-primary btnabono" id="abonar" value="ABONAR" onclick="AgregarAbono()">
       					</td>
       				</tr>
@@ -368,6 +368,35 @@ $.each(obj, function(index) {
 				  <td></td>
 					<td></td>
         </tbody>
+      		</table>
+          <table width="100%" border="1" align="center" class="gastos" id="historialgastos">
+      		<?php
+			  if($resultado != false){
+				  
+			  echo '<tr>
+      				<td align="center">&nbsp; Código de Factura &nbsp;</td>
+      				<td align="center">&nbsp; Fecha de la factura &nbsp;</td>
+      				<td align="center">&nbsp; Valor de la Factura &nbsp;</td>
+      				<td aling="center"><center>&nbsp; Saldo &nbsp;</center></td>
+					  <td aling="center"><center>&nbsp; Abono &nbsp;</center></td>
+      				<td align="center">&nbsp; Saldo Nuevo &nbsp;</td>
+              <td align="center">&nbsp; Fecha Abono &nbsp;</td>
+              <td align="center">&nbsp; Estado Factura &nbsp;</td>
+              <td align="center">&nbsp; Ubicación de la Factura &nbsp;</td>
+      			</tr>';
+			  foreach($resultado as $res){
+					echo '<tr><td aling="center"><center>' . $res[1] . '</center></td>';
+					echo '<td aling="center"><center>$' . $res[2] . '</center></td>';
+					echo '<td aling="center"><center>' . $res[3] . '</center></td>';
+					echo '<td aling="center"><center>' . $res[4] . '</center></td>';
+					echo '<td aling="center"><center>' . $res[5] . '</center></td>';
+				  	echo '<td aling="center"><center>' . $res[6] . '</center></td>';
+            echo '<td aling="center"><center>' . $res[7] . '</center></td>';
+            echo '<td aling="center"><center>' . $res[8] . '</center></td>';
+            echo '<td aling="center"><center>' . $res[9] . '</center></td></tr>';
+			}
+				  }
+			?>
       		</table>
       	</center>
       </div><!-- InstanceEndEditable --></td>
