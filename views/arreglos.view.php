@@ -201,7 +201,7 @@
 													<label class="fuente3" for="ubicacion_factura">
 														Ubicación de la Factura
 														<br>														
-														<input name="ubicacion_factura" type="text" class="form-control" id="ubicacion_factura" placeholder="Ubicación de la Factura" value="<?php if (!$enviado and isset($valor)) echo $valor ?>" onKeyPress="return valida(event)">
+														<input name="ubicacion_factura" type="text" class="form-control" id="ubicacion_factura" placeholder="Ubicación de la Factura" value="<?php if (!$enviado and isset($ubicacion)) echo $ubicacion ?>">
 														<br>
 													</label>
 												</td>
